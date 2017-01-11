@@ -1,0 +1,231 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,,samp,small,strikestrong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embedfigure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*--------------reset結束------------------*/
+
+body {
+    font-family: 微軟正黑體
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*--------------header - 粉絲團、追蹤我們------------------*/
+
+.header {
+    height: 100%;
+    height: 30px;
+    background-color: #f6f6f6;
+    display: block;
+}
+
+.header ul {
+    float: right;
+}
+
+.header ul li {
+    float: left;
+}
+
+.header ul li a {
+    padding: 1em;
+    text-decoration: none;
+}
+
+.header img {
+    margin-top: 5px;
+    margin-right: 3px;
+}
+
+.fb {
+    color: blue;
+}
+
+.twitter {
+    color: #65e0e0;
+}
+
+
+/*--------------topmenu - logo圖、menu------------------*/
+
+.topmenu {
+    height: 100%;
+    height: 50px;
+    display: block;
+    margin-top: 5px;
+    box-shadow: 1px 1px 5px #bfbdbd;
+}
+
+.topmenu ul {
+    float: right;
+    margin-top: 20px;
+}
+
+.topmenu ul li {
+    float: left;
+}
+
+.topmenu ul li a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: green;
+}
+
+.topmenu a:hover {
+    color: black;
+    border-bottom: 3px solid red;
+}
+/*無法讓hover效果離字遠一點*/
+
+
+.topmenu img {
+    margin-top: 8px;
+    margin-left: 20px;
+    ;
+}
+
+
+/*--------------main - 三塊優勢(feature圖片+h2、p內文)------------------*/
+
+.main {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    border: 0px solid black;
+}
+
+.main ul li {
+    float: left;
+    width: 30%;
+    height: 360px;
+    border: 0px solid red;
+    margin: 20px 1.3333% 0 1.3333%;
+    box-shadow: 3px 3px 8px gray;
+}
+
+.feature {
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.main p {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 2px;
+}
+
+/*--------------表頭選單在767px後變成2*2選單排列------------------*/
+
+@media(max-width:767px) {
+    .wrap {
+        max-width: 650px;
+    }
+    .topmenu {
+        height: 280px;
+        max-width: 100%;
+        box-shadow: none;
+    }
+    .topmenu img {
+        display: block;
+        width: 200px;
+        margin-left: 35%;
+        padding-top: 20px;
+    }
+    .topmenu ul {
+        float: none;
+    }
+    .topmenu ul li a {
+        display: block;
+        text-align: center;
+        width: 650px;
+        height: 30px;
+        margin-top: 5px;
+        box-shadow: 1px 1px 5px gray;
+        padding-top: 15px;
+    }
+    .topmenu ul li a:hover {
+        border-bottom: none;
+        background-color: cornflowerblue;
+        color: white;
+    }
+
+    /*--------------課程列表在1000px以下也能自適應，767px後變成單欄式排版------------------*/
+    
+    .main {
+        max-width: 100%;
+    }
+    .feature img {
+        width: 50%;
+    }
+    .main ul li {
+        width: 70%;
+        height: 400px;
+        margin-left: 100px
+    }
+    .main ul li p {
+        font-size: 20px;
+        letter-spacing: 3px;
+        line-height: 30px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
