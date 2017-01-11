@@ -60,8 +60,7 @@ body {
 /*--------------header - 粉絲團、追蹤我們------------------*/
 
 .header {
-    height: 100%;
-    height: 30px;
+    height: 45px;
     background-color: #f6f6f6;
     display: block;
 }
@@ -75,32 +74,30 @@ body {
 }
 
 .header ul li a {
-    padding: 1em;
+    margin-right: 20px;
     text-decoration: none;
 }
 
 .header img {
-    margin-top: 5px;
     margin-right: 3px;
+
 }
 
 .fb {
     color: blue;
 }
-
 .twitter {
     color: #65e0e0;
 }
-
-
-/*--------------topmenu - logo圖、menu------------------*/
+/*--------------topmenu - logo圖、topmenu------------------*/
 
 .topmenu {
     height: 100%;
     height: 50px;
     display: block;
-    margin-top: 5px;
+    margin-top: 6px;
     box-shadow: 1px 1px 5px #bfbdbd;
+    display: block;
 }
 
 .topmenu ul {
@@ -114,7 +111,7 @@ body {
 
 .topmenu ul li a {
     text-decoration: none;
-    margin-right: 20px;
+    margin-right:20px;
     color: green;
 }
 
@@ -123,7 +120,6 @@ body {
     border-bottom: 3px solid red;
 }
 /*無法讓hover效果離字遠一點*/
-
 
 .topmenu img {
     margin-top: 8px;
@@ -136,7 +132,7 @@ body {
 
 .main {
     width: 100%;
-    height: 400px;
+    height: 450px;
     margin: auto;
     border: 0px solid black;
 }
@@ -144,7 +140,7 @@ body {
 .main ul li {
     float: left;
     width: 30%;
-    height: 360px;
+    height: 400px;
     border: 0px solid red;
     margin: 20px 1.3333% 0 1.3333%;
     box-shadow: 3px 3px 8px gray;
@@ -155,6 +151,9 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 20px;
+}
+.feature img{
+    width: 76%;
 }
 
 .main h2 {
@@ -179,32 +178,35 @@ body {
     .wrap {
         max-width: 650px;
     }
-    .topmenu {
-        height: 280px;
-        max-width: 100%;
-        box-shadow: none;
-    }
     .topmenu img {
         display: block;
         width: 200px;
         margin-left: 35%;
         padding-top: 20px;
     }
-    .topmenu ul {
+    .topmenu {
+        height: 180px;
+        max-width: 100%;
+        box-shadow: none;
         float: none;
     }
-    .topmenu ul li a {
-        display: block;
-        text-align: center;
-        width: 650px;
-        height: 30px;
-        margin-top: 5px;
-        box-shadow: 1px 1px 5px gray;
-        padding-top: 15px;
+    .topmenu ul{
+        float: none;
     }
-    .topmenu ul li a:hover {
+    .topmenu ul li {
+        width: 48%;
+        height: 30px;
+        text-align: center;
+        margin: 5px;
+        padding-top: 15px;
+        box-shadow: 1px 1px 5px gray;
+    }
+    .topmenu ul li:hover {
         border-bottom: none;
         background-color: cornflowerblue;
+    }
+    .topmenu ul li a:hover{
+        border-bottom: none;
         color: white;
     }
 
@@ -213,16 +215,17 @@ body {
     .main {
         max-width: 100%;
     }
+    
     .feature img {
         width: 50%;
     }
     .main ul li {
         width: 70%;
-        height: 400px;
+        height: 450px;
         margin-left: 100px
     }
     .main ul li p {
-        font-size: 20px;
+        font-size: 18px;
         letter-spacing: 3px;
         line-height: 30px;
         padding-left: 35px;
