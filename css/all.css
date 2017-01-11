@@ -60,10 +60,14 @@ body {
 /*--------------header - 粉絲團、追蹤我們------------------*/
 
 .header {
-    height: 45px;
+    height: 56px;
     background-color: #f6f6f6;
     display: block;
 }
+
+/*
+//TODO: 不知道為什麼header的高度會影響到下面的topmenu，高度56px以下topmenu就會跑掉
+*/
 
 .header ul {
     float: right;
@@ -73,14 +77,16 @@ body {
     float: left;
 }
 
+
 .header ul li a {
     margin-right: 20px;
     text-decoration: none;
+    font-size: 16px;
 }
 
 .header img {
     margin-right: 3px;
-
+    
 }
 
 .fb {
@@ -113,6 +119,7 @@ body {
     text-decoration: none;
     margin-right:20px;
     color: green;
+    font-size: 16px;
 }
 
 .topmenu a:hover {
