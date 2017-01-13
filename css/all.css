@@ -65,10 +65,6 @@ body {
     display: block;
 }
 
-/*
-//TODO: 不知道為什麼header的高度會影響到下面的topmenu，高度56px以下topmenu就會跑掉
-*/
-
 .header ul {
     float: right;
 }
@@ -187,7 +183,7 @@ body {
     }
     .topmenu img {
         display: block;
-        width: 200px;
+        width: 30%;
         margin-left: 35%;
         padding-top: 20px;
     }
@@ -196,12 +192,13 @@ body {
         max-width: 100%;
         box-shadow: none;
         float: none;
+        
     }
     .topmenu ul{
         float: none;
     }
     .topmenu ul li {
-        width: 48%;
+        width: 40%;
         height: 30px;
         text-align: center;
         margin: 5px;
@@ -225,17 +222,32 @@ body {
     
     .feature img {
         width: 50%;
+        margin-top: 10px;
     }
     .main ul li {
+        
+        /*    修改部分開始    */
+        
+        float: none;
+        height: auto;
+        margin-left: 5%;
+        
+        /*    修改部分結束    */
+        
         width: 70%;
-        height: 450px;
-        margin-left: 100px
     }
     .main ul li p {
-        font-size: 18px;
+        font-size: 1em;
+        font-size-adjust: auto;
         letter-spacing: 3px;
         line-height: 30px;
         padding-left: 35px;
         padding-right: 35px;
     }
 }
+
+/*
+//TODO: main ul li 是要取消掉 float，不能用margin-left推擠固定像素哦！然後高度不能寫死，才有辦法在手機上去呈現
+//TODO: main ul li在手機上你雖然寫 width:48%，但margin:5px並不會自適應伸縮，margin左右邊用%數才會自適應
+//TODO: 用手機看的版面不夠完整
+*/
